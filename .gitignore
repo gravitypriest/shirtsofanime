@@ -1,0 +1,10 @@
+bower_components
+node_modules
+images
+uploads
+**/.DS_Store
+app/public/*.html
+app/public/*.js
+app/admin/*.html
+app/admin/*.js
+config.json

@@ -1,0 +1,76 @@
+.title-1 {
+    margin-bottom: 0px;
+}
+
+.title-2 {
+    margin-top: 0px;
+}
+
+body {
+    text-align:center;
+    background-color:#333;
+    color:#DDD;
+    font-family: sans-serif;
+    margin-left:10vw;
+    margin-right:;
+}
+
+a {
+    color: #FAA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    text-align: left;
+}
+
+.fourohfour {
+    font-size:100px;
+    font-family:monospace;
+}
+
+.series-block {
+    text-align: left;
+}
+
+.series-block > h3 {
+    margin-bottom: 0px;
+}
+
+.series-block > hr {
+    margin-top: 2px;
+}
+
+.shirt-thumbnail {
+    margin-left: 2px;
+    margin-right: 2px;
+    border: #FAA 2px solid;
+}
+
+.bottom-right {
+    font-size:12px;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    visibility: hidden;
+}
+
+.bottom-right:hover {
+    visibility: visible;
+}
+
+#image {
+    box-shadow: 3px 3px 10px #111;
+}
+
+input {
+    font-size: 14px;
+}
+
+#edit-origin-box {
+    display: none;
+}

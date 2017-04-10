@@ -1,0 +1,17 @@
+{
+  "name": "shirtsofanime",
+  "main": "shirtsofanime.js",
+  "authors": [
+    "Jeremy Crafts (https://github.com/gravitypriest)"
+  ],
+  "license": "ISC",
+  "homepage": "https://shirtsofanime.moe",
+  "dependencies": {
+    "jquery": "~3.1.1"
+  },
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/gravitypriest/shirtsofanime.git"
+  },
+  "private": true
+}

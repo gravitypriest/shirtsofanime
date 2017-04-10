@@ -1,0 +1,16 @@
+{
+    "server": {
+        "username": "<admin username>",
+        "password": "<admin password>",
+        "port": 3000
+    },
+    "db": {
+        "username": "<db user>",
+        "password": null,
+        "database": "shirtsofanime",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "charset": "utf8",
+        "logging": false
+    }
+}

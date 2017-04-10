@@ -1,0 +1,25 @@
+html
+    head
+        title Shirts of Anime [アニメのシャツ]
+        base(href='/')
+        meta(http-equiv='Content-Type' content='text/html')
+        meta(name='viewport' content='initial-scale=1.0')
+        script(src='jquery/dist/jquery.min.js')
+        script(src='admin/shirtadmin.js')
+        link(href='sof.css' rel='stylesheet')
+    body
+        div(id='nav')
+        div(id='content')
+            //- content
+            img(id='image')
+            p
+                strong
+                    span(id='origin')
+                input(type='text' id='edit-origin-box')
+                | &nbsp;
+                button(id='edit-origin') Edit
+            p
+                button(id='publish') Publish
+                | &nbsp;
+                button(id='delete') Delete
+        div.bottom-right(id='byline')
