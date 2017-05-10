@@ -1,5 +1,4 @@
 # Shirts of Anime 
----
 #### Basic image gallery showcasing T-shirts seen in anime
 Requires:
  * node.js & npm
