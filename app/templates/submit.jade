@@ -1,14 +1,10 @@
 html
     head
-        title Shirts of Anime [アニメのシャツ]
-        base(href='/')
-        meta(http-equiv='Content-Type' content='text/html')
-        meta(name='viewport' content='initial-scale=1.0')
-        script(src='jquery/dist/jquery.min.js')
+        include head.jade
         script(src='submit.js')
-        link(href='sof.css' rel='stylesheet')
     body
-        div(id='nav')
+        include title.jade
+        include nav.jade
         .submit
             //- content
             h4 Submission Rules
@@ -30,4 +26,4 @@ html
                     input(type='text' name='origin' required)
                 p
                     input(type='submit' value='Submit')
-        div.bottom-right(id='byline')
+        include byline.jade

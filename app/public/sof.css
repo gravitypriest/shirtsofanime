@@ -1,27 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+[v-cloak] {
+  display: none;
+}
+
+@media only screen and (max-device-width: 3000px) {
+    .nav-block {
+        width:120px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .nav-block-mobile {
+        display: none;
+    }
+    #content, #list, .submit{
+        display: inline-block;
+        width:calc(100% - 120px);
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    .nav-block-mobile {
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+    .nav-block {
+        display: none;
+    }
+    #content, #list, .submit{
+        width:100%;
+    }
+}
+
+.header-block {
+    display: inline-block;
+}
+
 .title-1 {
     margin-bottom: 0px;
+    display: block;
 }
 
 .title-2 {
     margin-top: 0px;
+    display: block;
 }
 
 body {
-    text-align:center;
-    background-color:#333;
+    /*text-align:center;*/
+    background-image: url('green-fibers.png');
+    background-repeat: repeat;
     color:#DDD;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-left:10vw;
     margin-right:10vw;
 }
 
 a {
-    color: #FAA;
+    color: #AFA;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+#content {
+    display: inline-block;
+    text-align: center;
 }
 
 .submit {
@@ -56,11 +102,6 @@ a:hover {
     position: absolute;
     bottom: 1%;
     right: 1%;
-    visibility: hidden;
-}
-
-.bottom-right:hover {
-    visibility: visible;
 }
 
 #image {
@@ -73,4 +114,8 @@ input {
 
 #edit-origin-box {
     display: none;
+}
+
+#origin {
+    font-size: 20px;
 }

@@ -1,8 +1,6 @@
 $(document).ready(function() {
     'use strict';
     var shirt_id;
-    $('#nav').load('nav.html');
-    $('#byline').load('byline.html');
     if (location.pathname === '/'||
         location.pathname === '/random' ||
         location.pathname === '/random/') {
