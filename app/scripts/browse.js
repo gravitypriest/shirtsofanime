@@ -1,6 +1,7 @@
 $(document).ready(function() {
     'use strict';
     $('#nav').load('nav.html');
+    $('#title').load('title.html');
     $('#byline').load('byline.html');
     $.ajax({
         url: '/api/shirts/',

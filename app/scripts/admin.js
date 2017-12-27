@@ -10,7 +10,7 @@ $(document).ready(function() {
         if (Object.keys(result).length === 0){
             var none = document.createElement('h3');
             none.innerHTML = 'Nothing to see here!';
-            $('#list').append(none);
+            $('#list').appendChild(none);
             return;
         }
         Object.keys(result).sort().forEach(function(key) {
@@ -18,11 +18,11 @@ $(document).ready(function() {
             var title = document.createElement('h3');
             
             series.className = 'series-block';
-            series.append(title);
-            series.append(document.createElement('hr'));
+            series.appendChild(title);
+            series.appendChild(document.createElement('hr'));
 
             title.innerHTML = key;
-            $('#list').append(series);
+            $('#list').appendChild(series);
 
             result[key].forEach(function(obj) {
                 var link = document.createElement('a');
@@ -30,8 +30,8 @@ $(document).ready(function() {
                 var shirtThumb = document.createElement('img');
                 shirtThumb.src = 'images/' + obj.id + '_thumb.jpg';
                 shirtThumb.className = 'shirt-thumbnail';
-                link.append(shirtThumb);
-                series.append(link);
+                link.appendChild(shirtThumb);
+                series.appendChild(link);
             });
         });
     });
