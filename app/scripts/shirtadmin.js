@@ -1,8 +1,6 @@
 $(document).ready(function() {
     'use strict';
     var shirt_id = location.pathname.split('/admin/')[1];
-    $('#nav').load('nav.html');
-    $('#byline').load('byline.html');
     $.get('/api/shirts/' + shirt_id)
     .then(function(result) {
         Object.keys(result).forEach(function(key) {

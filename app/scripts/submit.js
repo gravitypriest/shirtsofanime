@@ -1,7 +1,5 @@
 $(document).ready(function() {
     'use strict';
-    $('#nav').load('nav.html');
-    $('#byline').load('byline.html');
     $('#upload').submit(function(event) {
         event.preventDefault();
         var formdata = new FormData(this);

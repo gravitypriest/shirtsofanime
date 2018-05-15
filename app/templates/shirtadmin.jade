@@ -1,25 +1,21 @@
 html
     head
-        title Shirts of Anime [アニメのシャツ]
-        base(href='/')
-        meta(http-equiv='Content-Type' content='text/html')
-        meta(name='viewport' content='initial-scale=1.0')
-        script(src='jquery/dist/jquery.min.js')
+        include head.jade
         script(src='admin/shirtadmin.js')
-        link(href='sof.css' rel='stylesheet')
     body
-        div(id='nav')
-        .viewer-block(id='content')
+        include title.jade
+        include nav.jade
+        #content
             //- content
-            img(id='image')
+            img#image
             p
                 strong
-                    span(id='origin')
-                input(type='text' id='edit-origin-box')
+                    span#origin
+                input#edit-origin-box(type='text')
                 | &nbsp;
-                button(id='edit-origin') Edit
+                button#edit-origin Edit
             p
-                button(id='publish') Publish
+                button#publish Publish
                 | &nbsp;
-                button(id='delete') Delete
-        div.bottom-right(id='byline')
+                button#delete Delete
+        include byline.jade
