@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+q@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 [v-cloak] {
   display: none;
@@ -17,6 +17,10 @@
         display: inline-block;
         width:calc(100% - 120px);
     }
+    #logo {
+        height: 64px;
+        width: 64px;
+    }
 }
 @media only screen and (max-device-width: 480px) {
     .nav-block-mobile {
@@ -29,6 +33,13 @@
     }
     #content, #list, .submit{
         width:100%;
+    }
+    #logo {
+        height: 48px;
+        width: 48px;
+    }
+    .title-1 {
+        font-size:1.6em;
     }
 }
 
@@ -45,12 +56,17 @@
     margin-top: 0px;
     display: block;
 }
+ 
+#logo {
+    transform:rotate(15deg);
+}
+
 
 body {
     /*text-align:center;*/
     background-image: url('green-fibers.png');
     background-repeat: repeat;
-    color:#DDD;
+    color:#EEE;
     font-family: 'Open Sans', sans-serif;
     margin-left:10vw;
     margin-right:10vw;
@@ -94,12 +110,13 @@ a:hover {
 .shirt-thumbnail {
     margin-left: 2px;
     margin-right: 2px;
+    margin-bottom: 2px;
     border: #FAA 2px solid;
 }
 
 .bottom-right {
     font-size:12px;
-    position: absolute;
+    position: fixed;
     bottom: 1%;
     right: 1%;
 }
